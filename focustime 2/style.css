@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: #323238;
+    --bg-white: #FFFFFF;
+    --bt-active: #02799D;
+    --bt-inative: #E1E1E6;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-white);
+    color: var(--text-color);
+    display: grid;
+    min-height: 100vh;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    gap: 190px;
+}
+
+span {
+    font-size: 126px;
+}
+
+.controls {
+    display: flex;
+    padding-top: 48px;
+    gap: 40px;
+}
+
+#timer {
+    align-self: center;
+}
+
+#musics {
+    gap: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+}
+
+.hide {
+    display: none;
+}
