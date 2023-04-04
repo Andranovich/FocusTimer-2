@@ -30,7 +30,8 @@ const sounds = {
 
 export default function() {
     let currentAudio = new Audio()
-
+    currentAudio.loop = true
+    
     function changeAudio(audioName) {
         pressToStop()
         currentAudio.src = sounds[audioName]
